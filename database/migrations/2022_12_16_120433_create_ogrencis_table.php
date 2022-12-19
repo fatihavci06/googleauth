@@ -20,7 +20,6 @@ class CreateOgrencisTable extends Migration
             $table->integer('brans_id')->nullable();
             $table->string('firstname')->nullable();
             $table->string('lastname')->nullable();
-            $table->string('cepno')->nullable();
             $table->integer('veli_id')->nullable();
             $table->string('adres')->nullable();
             $table->string('eposta')->nullable();

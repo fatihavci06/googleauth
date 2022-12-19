@@ -17,9 +17,10 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('email_kurum')->unique();
-            $table->integer('rol')->default(0)->comment('0:aday,1:öğrenci,2:veli,3:öğretmen	');
-            $table->integer('tc');
+            $table->string('email_kurum')->nullable()->unique();
+            $table->integer('rol')->default(0)->comment('1:personel,1:öğrenci,2:veli,3:öğretmen	');
+            $table->string('tc');
+            $table->string('cepno')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('google_id');
             $table->string('password')->nullable();

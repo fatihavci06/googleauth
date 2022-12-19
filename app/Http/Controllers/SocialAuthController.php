@@ -44,18 +44,19 @@ class SocialAuthController extends Controller
             auth()->login($existingUser, true);
         } else {
             // create a new user
-            /* return redirect()->route('login')->with(['danger'=>'Kullanıcı bulunamadı']);*/
-              $newUser                  = new User;
+           return redirect()->route('back.giris')->with(['false'=>'Kullanıcı bulunamadı']);
+            /*  $newUser                  = new User;
                $newUser->name            = $user->name;
                $newUser->email           = $user->email;
                $newUser->google_id       = $user->id;
 
 
+
                $newUser->save();
 
-               auth()->login($newUser, true);
+               auth()->login($newUser, true);*/
           }
-          return redirect()->to('/home');
+          return redirect()->route('back.index');
       }
       public function redirectToProvider()
       {

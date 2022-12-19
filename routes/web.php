@@ -22,3 +22,12 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/redirect', 'App\Http\Controllers\SocialAuthController@redirectToProvider')->name('redirectgoogle');
 Route::get('/callback', 'App\Http\Controllers\SocialAuthController@handleProviderCallback');
+
+Route::group(['prefix' => 'yonetim'], function() {
+    Route::get('/giris','App\Http\Controllers\back\IndexController@login')->name('back.giris');
+    Route::post('/girispost','App\Http\Controllers\back\IndexController@loginpost')->name('back.girispost');
+    Route::get('/sifremi-unuttum','App\Http\Controllers\back\IndexController@sifremiunuttum')->name('back.sifremiunuttum');
+    Route::post('/sifremi-unuttum','App\Http\Controllers\back\IndexController@sifremiunuttumpost')->name('back.sifremiunuttumpost');
+    Route::get('/','App\Http\Controllers\back\IndexController@index')->name('back.index');
+    Route::get('/logout','App\Http\Controllers\back\IndexController@logout')->name('back.logout');
+  });

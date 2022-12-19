@@ -23,7 +23,7 @@ class CreateAdaysTable extends Migration
             $table->string('birtercih')->nullable();
             $table->string('ikitercih')->nullable();
             $table->string('uctercih')->nullable();
-            $table->string('cepno')->nullable();
+            
             $table->string('adres')->nullable();
             $table->string('eposta')->nullable();
             $table->string('cinsiyet')->nullable();
