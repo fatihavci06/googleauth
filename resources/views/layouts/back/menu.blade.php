@@ -52,7 +52,7 @@
                                     <hr class="mb-0 navbar-vertical-divider" />
                                 </div>
                             </div>
-                           
+
                             <a class="nav-link dropdown-indicator" href="#aday" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="events">
                                 <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-calendar-day"></span></span><span class="nav-link-text ps-1">Adaylar</span>
                                 </div>
@@ -70,14 +70,21 @@
 
                             </ul>
                             <a class="nav-link dropdown-indicator" href="#calisan" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="events">
-                                <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-calendar-day"></span></span><span class="nav-link-text ps-1">Çalışanlar</span>
+                                <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-calendar-day"></span></span><span class="nav-link-text ps-1">Personel</span>
                                 </div>
                             </a>
                             <ul class="nav collapse" id="calisan">
 
                                 <li class="nav-item">
                                     <a class="nav-link" href="">
-                                        <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Aday Listesi</span>
+                                        <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Personel  Listesi</span>
+                                        </div>
+                                    </a>
+                                    <!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('personel.ekle') }}">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Personel  Ekle</span>
                                         </div>
                                     </a>
                                     <!-- more inner pages-->
@@ -85,7 +92,7 @@
 
 
                             </ul>
-                            
+
 
 
 

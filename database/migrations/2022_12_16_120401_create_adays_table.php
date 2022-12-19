@@ -17,15 +17,21 @@ class CreateAdaysTable extends Migration
             $table->id();
             $table->string('avatar')->nullable();
             $table->integer('brans_id')->nullable();
+            $table->integer('sistemrol')->nullable();
+            $table->integer('portalrol')->nullable();
+            $table->text('ekgorev')->nullable();
+            $table->integer('etutvercekmi')->nullable();
             $table->integer('user_id');
             $table->string('firstname')->nullable();
             $table->string('lastname')->nullable();
             $table->string('birtercih')->nullable();
             $table->string('ikitercih')->nullable();
             $table->string('uctercih')->nullable();
-            
+            $table->string('adressabahservis')->nullable();
+            $table->string('adresaksamservis')->nullable();
             $table->string('adres')->nullable();
             $table->string('eposta')->nullable();
+            $table->string('gmail')->nullable();
             $table->string('cinsiyet')->nullable();
             $table->date('dtarihi')->nullable()->comment('dogum_tarihi');
             $table->string('dyeri')->nullable()->comment('dogum_yeri');
